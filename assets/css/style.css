@@ -1310,8 +1310,7 @@ section .container {
 
 /* dropdown */
 
-
-.dropdown {
+.dropdown-content {
   display: flex;
   flex-direction: column;
   min-width: 230px;
@@ -1327,14 +1326,7 @@ section .container {
   box-shadow: var(--shadow);
 }
 
-
- .dropdown {
-  visibility: visible;
-  opacity: 1;
-  transform: scale(1) translateX(5px);
-}
-
-.dropdown ul {
+.dropdown-content ul {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -1342,7 +1334,13 @@ section .container {
   font-size: 0.95rem;
 }
 
-.dropdown-btn {
+.dropdown-btn:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1) translateX(-5px);
+}
+
+.dropdown-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
