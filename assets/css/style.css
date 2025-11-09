@@ -726,10 +726,14 @@ section .container {
   background: #35e888;
 }
 
-.services .icon-box:hover h4 a, .services .icon-box:hover p {
+.services .icon-box:hover h4 a, .services {
   color: #12d640;
 }
 
+.icon-box p {
+  color: #010e1b;
+  text-align: left;
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
