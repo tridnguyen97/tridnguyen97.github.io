@@ -49,6 +49,10 @@
     }
   });
 
+  if (!window.location.hash) {
+    window.location.hash = '#about';
+  }
+
   // Activate/show sections on load with hash links
   if (window.location.hash) {
     var initial_nav = window.location.hash;

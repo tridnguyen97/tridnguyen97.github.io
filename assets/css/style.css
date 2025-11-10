@@ -1320,7 +1320,7 @@ section .container {
   min-width: 230px;
   background-color: var(--white);
   border-radius: 10px;
-  position: absolute;
+  position: fixed;
   top: 36px;
   z-index: 1;
   visibility: hidden;
@@ -1342,6 +1342,7 @@ section .container {
   visibility: visible;
   opacity: 1;
   transform: scale(1) translateX(-5px);
+
 }
 
 .dropdown-text {
@@ -1357,9 +1358,9 @@ section .container {
   padding: 0.5rem 0;
   border-radius: 7px;
   transition: 0.1s ease-in-out;
+  color: black !important;
 }
 
-.dropdown-link p {
-  font-size: 0.8rem;
-  color: var(--medium-grey);
+.dropdown-link:hover {
+  color: #12d640 !important;
 }
