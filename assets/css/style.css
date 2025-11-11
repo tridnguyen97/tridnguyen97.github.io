@@ -1361,6 +1361,6 @@ section .container {
   color: black !important;
 }
 
-.dropdown-link:hover {
+.dropdown-link:hover, .active > .dropdown-link {
   color: #12d640 !important;
 }
