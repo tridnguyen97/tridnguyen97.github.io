@@ -1286,10 +1286,9 @@ section .container {
   background-color: var(--white);
   border-radius: 10px;
   position: fixed;
-  top: 36px;
+  top: 86px;
   z-index: 999999;
-  visibility: hidden;
-  opacity: 0;
+  /* visibility: hidden; */
   transform: scale(0.97) translateX(-5px);
   transition: 0.1s ease-in-out;
   box-shadow: var(--shadow);
@@ -1303,11 +1302,14 @@ section .container {
   font-size: 0.95rem;
 }
 
-.dropdown-btn:hover .dropdown-content {
-  visibility: visible;
-  opacity: 1;
-  transform: scale(1) translateX(-5px);
+.dropdown-content ul li {
+  margin-left: 0px;
+}
 
+.dropdown-btn {
+  display: flex;
+  align-items: center; /* vertically center */
+  gap: 6px; /* space between text and arrow */
 }
 
 .dropdown-text {
@@ -1328,4 +1330,8 @@ section .container {
 
 .dropdown-link:hover, .active > .dropdown-link {
   color: #12d640 !important;
+}
+
+.hidden-content {
+  display: none;
 }

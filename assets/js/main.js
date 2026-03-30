@@ -126,3 +126,24 @@
   });
 
 })(jQuery);
+
+$(document).on('click', function(e) {
+  // debugger
+  const $dropdownBtn = $('.dropdown-btn')  
+  const $arrow = $dropdownBtn.find('svg')
+  const $dropdownContent = $('.dropdown-content')
+  if(!$dropdownContent.hasClass("hidden") && $dropdownBtn.has(e.target) === 0) $dropdownContent.toggleClass("hidden")
+  if(!$arrow.length) return
+  if($arrow.hasClass("rotate-180") && $dropdownBtn.has(e.target) === 0) $arrow.toggleClass("rotate-180")
+})
+
+$(document).on('click', '.dropdown-btn, .dropdown-link', function(e) {
+  const $arrow = $('.dropdown-btn').find('svg')
+  $(".dropdown-content").toggleClass("hidden-content")
+  if($arrow.length) {
+    $arrow.toggleClass("rotate-180")
+    $arrow.toggleClass("rotate-0")
+  } 
+  e.preventDefault()
+})
+

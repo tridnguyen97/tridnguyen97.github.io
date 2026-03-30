@@ -67,30 +67,33 @@
   <div class="container">
     <nav class="nav-menu d-none d-lg-block">
       <ul>
-        <li class="active"><a href="#about"> <span>About me</span></a></li>
-        <li><a href="#resume"><span>Resume</span></a></li>
-        <li>
-          <div class="dropdown-btn">
-            <a class="dropdown-text">
+        <li class="nav-item active"><a href="#about"> <span>About me</span></a></li>
+        <li class="nav-item"><a href="#resume"><span>Resume</span></a></li>
+        <li class="nav-item">
+          <div class="dropdown-btn" data-dropdown-toggle="">
+            <a class="dropdown-text" href="#">
               Discover
             </a>
-            <div class="dropdown-content">
+            <svg class="h-5 w-5 rotate-0" fill="none" viewBox="0 0 24 24" stroke="white">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+            <div class="hidden-content dropdown-content">
               <ul>
-                <li>
-                  <a class="dropdown-link" href="#branding">Applying principles of sustainability to create viable
+                <li class="hidden">
+                  <a class="dropdown-link" href="#branding">Applying principles of sustainability to create
+                    viable
                     systems</a>
                 </li>
-              </ul>
-              <ul>
                 <li>
-                  <a class="dropdown-link" href="#professional">Professional Practice within intercultural and global
+                  <a class="dropdown-link" href="#professional">Professional Practice within intercultural and
+                    global
                     contexts</a>
                 </li>
               </ul>
             </div>
           </div>
         </li>
-        <li><a href="#cover"> <span>Cover letter</span></a></li>
+        <li class="nav-item"><a href="#cover"> <span>Cover letter</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
   </div>
@@ -398,7 +401,7 @@
   </script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 
