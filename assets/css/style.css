@@ -45,6 +45,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+h1 {
+  font-size: 2.5rem !important;
+  font-weight: 500 !important;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -1288,7 +1293,6 @@ section .container {
   position: fixed;
   top: 86px;
   z-index: 999999;
-  /* visibility: hidden; */
   transform: scale(0.97) translateX(-5px);
   transition: 0.1s ease-in-out;
   box-shadow: var(--shadow);
