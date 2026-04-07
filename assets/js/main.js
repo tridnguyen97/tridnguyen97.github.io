@@ -139,7 +139,11 @@ $(document).on('click', function(e) {
 
 $(document).on('click', '.dropdown-btn, .dropdown-link', function(e) {
   const $arrow = $('.dropdown-btn').find('svg')
+  const $dropdownBtn = $('.dropdown-btn')  
+  const $dropdownContent = $('.dropdown-content')
   $(".dropdown-content").toggleClass("hidden-content")
+  $dropdownContent.toggleClass('open');
+  $dropdownBtn.toggleClass('open');
   if($arrow.length) {
     $arrow.toggleClass("rotate-180")
     $arrow.toggleClass("rotate-0")

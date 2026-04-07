@@ -1294,7 +1294,7 @@ section .container {
   top: 86px;
   z-index: 999999;
   transform: scale(0.97) translateX(-5px);
-  transition: 0.1s ease-in-out;
+  transition: max-height 0.4s ease-in-out;
   box-shadow: var(--shadow);
 }
 
@@ -1314,6 +1314,19 @@ section .container {
   display: flex;
   align-items: center; /* vertically center */
   gap: 6px; /* space between text and arrow */
+}
+
+.dropdown-content.open {
+  max-height: 300px; /* adjust based on content */
+}
+
+/* optional: rotate arrow */
+.dropdown-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.dropdown-btn.open svg {
+  transform: rotate(180deg);
 }
 
 .dropdown-text {
